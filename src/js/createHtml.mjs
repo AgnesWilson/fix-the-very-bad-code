@@ -1,7 +1,7 @@
-import {getPodcasts} from './api'
+import { getPodcasts } from "./api.mjs";
 
 
-const podCastContainer = document.querySelector('.section__podlist-pods');
+const podCastContainer = document.querySelector('#podList');
 
 let i = 0;
 
