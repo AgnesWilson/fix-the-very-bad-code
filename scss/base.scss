@@ -60,15 +60,3 @@ a :active, a:hover{
 .darkmode a:active, .darkmode a:hover{
   color:rgb(85, 85, 218);
 }
-@media screen and (min-width: 1000px) {
-  .section__podlist-pods{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .section__podlist-pods{
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  
-}
