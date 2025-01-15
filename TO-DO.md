@@ -1,6 +1,7 @@
 G
 - [x] Få projektet att funka
 - [x] CSS till Sass
+- [ ] Fixa light dark toggle mode 
 - [ ] Enhetlig namngivning i CSS:en
 - [ ] Konvertera till TypeScript
 - [ ] Enhetlig kodkvalitet
@@ -9,7 +10,7 @@ G
 - [ ] Rensa loggning
 - [ ] Dokumentation
 - [ ] Tillgänglighet (bilder)
-- [ ] Refaktorera funktioner
+- [x] Refaktorera funktioner
 - [ ] Eliminera onödig kod
 - [ ] Rensa bort kod som inte ska sättas
   
