@@ -9,6 +9,12 @@ function runPage (){
 
 runPage();
 
+export function consoleLog(parameter) {
+  // eslint-disable-next-line no-console
+  console.log(parameter);
+}
+
+
 
 
 
