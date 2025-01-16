@@ -14,13 +14,13 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-.section-article {
+.article {
   display: flex;
   flex-direction: row;
   margin-bottom: 2rem;
 }
 
-.section-article-div {
+.text-div{
   display: inline-flex;
   flex-direction: column;
   margin-top: 0;
@@ -51,7 +51,7 @@ a {
   cursor: pointer;
 }
 
-a :active, a:hover {
+a:active, a:hover {
   color:rgb(85, 85, 218);
 }
 
@@ -62,8 +62,9 @@ a :active, a:hover {
   a {
     color: #242424;
   }
+}
 
-  a:active, .darkmode a:hover{
-    color:rgb(85, 85, 218);
-  }
+
+a:active, .darkmode a:hover{
+  color:rgb(85, 85, 218);
 }

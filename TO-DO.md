@@ -1,18 +1,18 @@
 G
 - [x] Få projektet att funka
 - [x] CSS till Sass
-- [ ] Fixa light dark toggle mode 
-- [ ] Enhetlig namngivning i CSS:en
+- [x] Fixa light dark toggle mode 
+- [x] Enhetlig namngivning i CSS:en
 - [ ] Konvertera till TypeScript
-- [ ] Enhetlig kodkvalitet
-- [ ] Mobilvyn
-- [ ] Språk
-- [ ] Rensa loggning
+- [x] Enhetlig kodkvalitet (ESLint)
+- [x] Mobilvyn
+- [x] Språk
+(- [ ] Rensa loggning)
 - [ ] Dokumentation
 - [ ] Tillgänglighet (bilder)
 - [x] Refaktorera funktioner
-- [ ] Eliminera onödig kod
-- [ ] Rensa bort kod som inte ska sättas
+- [x] Eliminera onödig kod
+- [x] Rensa bort kod som inte ska sättas
   
 VG
 - [ ] Rätt sak på rätt plats
