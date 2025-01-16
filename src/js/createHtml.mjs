@@ -11,7 +11,7 @@ export async function createHtml() {
 
         createImg(podcast, innerArticle); 
         createHeader(podcast, textDiv); 
-        createP(podcast, textDiv); 
+        createDescription(podcast, textDiv); 
         createLink(podcast, textDiv); 
     });
 }
@@ -48,7 +48,7 @@ function createHeader(podcast, textDiv) {
 }
 
 
-function createP(podcast, textDiv) {
+function createDescription(podcast, textDiv) {
     const descPlacement = document.createElement('p');
     const desc = document.createTextNode(podcast.description); 
     descPlacement.appendChild(desc);
