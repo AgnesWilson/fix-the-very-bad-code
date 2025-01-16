@@ -7,9 +7,10 @@ export async function createHtml() {
 
     podCasts.programs.forEach((podcast) => {
         const innerArticle = createInnerArticle(); 
-        const textDiv = createTextDiv(innerArticle); 
 
         createImg(podcast, innerArticle); 
+        const textDiv = createTextDiv(innerArticle); 
+
         createHeader(podcast, textDiv); 
         createDescription(podcast, textDiv); 
         createLink(podcast, textDiv); 

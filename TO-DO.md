@@ -2,24 +2,16 @@ G
 - [x] Få projektet att funka
 - [x] CSS till Sass
 - [x] Fixa light dark toggle mode 
-- [x] Refaktorera funktioner
-
-- [x]Clean up code
-    - [x] Remove unnecessary code
-    - [x] Remove tab index
-    - [x] Refractor function names an variables
-    - [x] Clean up css
-    - [x] Fix language issues
-
 - [x] Enhetlig namngivning i CSS:en
 - [ ] Konvertera till TypeScript
-- [ ] Enhetlig kodkvalitet
+- [ ] Enhetlig kodkvalitet (ESLint)
 - [x] Mobilvyn
 - [x] Språk
 (- [ ] Rensa loggning)
 - [ ] Dokumentation
 - [ ] Tillgänglighet (bilder)
-- [ ] Eliminera onödig kod
+- [x] Refaktorera funktioner
+- [x] Eliminera onödig kod
 - [x] Rensa bort kod som inte ska sättas
   
 VG
