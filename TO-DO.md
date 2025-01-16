@@ -4,23 +4,23 @@ G
 - [x] Fixa light dark toggle mode 
 - [x] Refaktorera funktioner
 
-- [ ]Clean up code
-    - [ ] Remove unnecessary code
+- [x]Clean up code
+    - [x] Remove unnecessary code
     - [x] Remove tab index
-    - [ ] Refractor function names an variables
-    - [ ] Clean up css
+    - [x] Refractor function names an variables
+    - [x] Clean up css
     - [x] Fix language issues
 
-- [ ] Enhetlig namngivning i CSS:en
+- [x] Enhetlig namngivning i CSS:en
 - [ ] Konvertera till TypeScript
 - [ ] Enhetlig kodkvalitet
-- [ ] Mobilvyn
+- [x] Mobilvyn
 - [x] Språk
-- [ ] Rensa loggning
+(- [ ] Rensa loggning)
 - [ ] Dokumentation
 - [ ] Tillgänglighet (bilder)
 - [ ] Eliminera onödig kod
-- [ ] Rensa bort kod som inte ska sättas
+- [x] Rensa bort kod som inte ska sättas
   
 VG
 - [ ] Rätt sak på rätt plats

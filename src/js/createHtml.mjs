@@ -18,7 +18,7 @@ export async function createHtml() {
 
 function createInnerArticle() {
     const innerArticle = document.createElement('article');
-    innerArticle.setAttribute('class', 'section-article');
+    innerArticle.setAttribute('class', 'article');
     podCastContainer.appendChild(innerArticle);
     return innerArticle;
 }
@@ -26,7 +26,7 @@ function createInnerArticle() {
 
 function createTextDiv(innerArticle) {
     const textDiv = document.createElement('div');
-    textDiv.setAttribute('class', 'section-article-div');
+    textDiv.setAttribute('class', 'text-div');
     innerArticle.appendChild(textDiv); 
     return textDiv;
 }
