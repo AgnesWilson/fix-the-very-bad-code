@@ -1,7 +1,7 @@
 G
 - [x] Få projektet att funka
 - [x] CSS till Sass
-- [ ] Fixa light dark toggle mode 
+- [x] Fixa light dark toggle mode 
 - [ ] Enhetlig namngivning i CSS:en
 - [ ] Konvertera till TypeScript
 - [ ] Enhetlig kodkvalitet
