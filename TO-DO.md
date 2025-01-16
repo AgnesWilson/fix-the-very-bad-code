@@ -3,11 +3,19 @@ G
 - [x] CSS till Sass
 - [x] Fixa light dark toggle mode 
 - [x] Refaktorera funktioner
+
+- [ ]Clean up code
+    - [ ] Remove unnecessary code
+    - [x] Remove tab index
+    - [ ] Refractor function names an variables
+    - [ ] Clean up css
+    - [x] Fix language issues
+
 - [ ] Enhetlig namngivning i CSS:en
 - [ ] Konvertera till TypeScript
 - [ ] Enhetlig kodkvalitet
 - [ ] Mobilvyn
-- [ ] Språk
+- [x] Språk
 - [ ] Rensa loggning
 - [ ] Dokumentation
 - [ ] Tillgänglighet (bilder)
