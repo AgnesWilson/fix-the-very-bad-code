@@ -11,15 +11,14 @@ export async function createHtml() {
 
         createImg(podcast, innerArticle); 
         createHeader(podcast, textDiv); 
-        createP(podcast, textDiv); 
+        createDescription(podcast, textDiv); 
         createLink(podcast, textDiv); 
     });
 }
 
 function createInnerArticle() {
     const innerArticle = document.createElement('article');
-    innerArticle.setAttribute('class', 'section-article');
-    innerArticle.setAttribute('tabindex', '1');
+    innerArticle.setAttribute('class', 'article');
     podCastContainer.appendChild(innerArticle);
     return innerArticle;
 }
@@ -27,7 +26,7 @@ function createInnerArticle() {
 
 function createTextDiv(innerArticle) {
     const textDiv = document.createElement('div');
-    textDiv.setAttribute('class', 'section-article-div');
+    textDiv.setAttribute('class', 'text-div');
     innerArticle.appendChild(textDiv); 
     return textDiv;
 }
@@ -49,7 +48,7 @@ function createHeader(podcast, textDiv) {
 }
 
 
-function createP(podcast, textDiv) {
+function createDescription(podcast, textDiv) {
     const descPlacement = document.createElement('p');
     const desc = document.createTextNode(podcast.description); 
     descPlacement.appendChild(desc);
@@ -60,7 +59,6 @@ function createLink(podcast, textDiv) {
     const linkPlacement = document.createElement('a');
     const linkText = document.createTextNode('Lyssna här');
     linkPlacement.setAttribute('href', podcast.programurl); 
-    linkPlacement.setAttribute('tabindex', '1');
     linkPlacement.appendChild(linkText);
     textDiv.appendChild(linkPlacement); 
 }
