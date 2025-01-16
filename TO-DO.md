@@ -4,7 +4,7 @@ G
 - [x] Fixa light dark toggle mode 
 - [x] Enhetlig namngivning i CSS:en
 - [ ] Konvertera till TypeScript
-- [ ] Enhetlig kodkvalitet (ESLint)
+- [x] Enhetlig kodkvalitet (ESLint)
 - [x] Mobilvyn
 - [x] Språk
 (- [ ] Rensa loggning)
