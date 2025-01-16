@@ -38,6 +38,7 @@ function createImg(podcast, innerArticle) {
     imgPlacement.setAttribute('src', podcast.socialimage);
     imgPlacement.setAttribute('width', '100');
     imgPlacement.setAttribute('height', '100');
+    imgPlacement.setAttribute('alt', `Bild för podcast: ${podcast.name}`);
     innerArticle.appendChild(imgPlacement);
 }
 
