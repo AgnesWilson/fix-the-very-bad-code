@@ -49,7 +49,7 @@ function createImg(podcast: Podcast, innerArticle: HTMLElement): void {
   innerArticle.appendChild(imgPlacement);
 }
 
-function createHeader(podcast: Podcast, textDiv: HTMLElement): string {
+function createHeader(podcast: Podcast, textDiv: HTMLElement): void {
   const headerPlacement = document.createElement('h2');
   const programName = document.createTextNode(podcast.name);
   headerPlacement.appendChild(programName);
