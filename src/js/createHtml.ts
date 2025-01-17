@@ -1,11 +1,18 @@
-import { getPodcasts } from './api.mjs';
+import { getPodcasts } from './api.ts';
 
-const podCastContainer = document.querySelector('#podList');
+const podCastContainer = document.querySelector('#podList') as HTMLElement;
+
+interface Podcast {
+  name: string;
+  description: string;
+  programurl: string;
+  socialimage: string;
+}
 
 export async function createHtml() {
   const podCasts = await getPodcasts();
 
-  podCasts.programs.forEach((podcast) => {
+  podCasts.programs.forEach((podcast :Podcast): void => {
     const innerArticle = createInnerArticle();
 
     createImg(podcast, innerArticle);
@@ -17,7 +24,7 @@ export async function createHtml() {
   });
 }
 
-function createInnerArticle() {
+function createInnerArticle(): HTMLElement {
   const innerArticle = document.createElement('article');
   innerArticle.setAttribute('class', 'article');
   podCastContainer.appendChild(innerArticle);
@@ -25,7 +32,7 @@ function createInnerArticle() {
 }
 
 
-function createTextDiv(innerArticle) {
+function createTextDiv(innerArticle: HTMLElement): HTMLElement {
   const textDiv = document.createElement('div');
   textDiv.setAttribute('class', 'text-div');
   innerArticle.appendChild(textDiv);
@@ -33,7 +40,7 @@ function createTextDiv(innerArticle) {
 }
 
 
-function createImg(podcast, innerArticle) {
+function createImg(podcast: Podcast, innerArticle: HTMLElement): void {
   const imgPlacement = document.createElement('img');
   imgPlacement.setAttribute('src', podcast.socialimage);
   imgPlacement.setAttribute('width', '100');
@@ -42,7 +49,7 @@ function createImg(podcast, innerArticle) {
   innerArticle.appendChild(imgPlacement);
 }
 
-function createHeader(podcast, textDiv) {
+function createHeader(podcast: Podcast, textDiv: HTMLElement): string {
   const headerPlacement = document.createElement('h2');
   const programName = document.createTextNode(podcast.name);
   headerPlacement.appendChild(programName);
@@ -50,14 +57,14 @@ function createHeader(podcast, textDiv) {
 }
 
 
-function createDescription(podcast, textDiv) {
+function createDescription(podcast: Podcast, textDiv: HTMLElement): void {
   const descPlacement = document.createElement('p');
   const desc = document.createTextNode(podcast.description);
   descPlacement.appendChild(desc);
   textDiv.appendChild(descPlacement);
 }
 
-function createLink(podcast, textDiv) {
+function createLink(podcast: Podcast, textDiv: HTMLElement): void {
   const linkPlacement = document.createElement('a');
   const linkText = document.createTextNode('Lyssna här');
   linkPlacement.setAttribute('href', podcast.programurl);

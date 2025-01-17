@@ -1,4 +1,4 @@
-import { consoleLog } from '../../main.mjs';
+import { consoleLog } from '../../main.js';
 const toggleLightModeButton = document.querySelector('.toggle-btn');
 
 toggleLightModeButton.addEventListener('click', toggleLightMode);
