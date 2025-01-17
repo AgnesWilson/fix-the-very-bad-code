@@ -55,8 +55,8 @@ export default [
   pluginJs.configs.recommended
 ];
 [
-  {files: ['**/*.{js,mjs,cjs,ts}']},
-  {languageOptions: { globals: globals.browser }},
+  { files: ['**/*.{js,mjs,cjs,ts}']},
+  { languageOptions: { globals: globals.browser }},
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
 ];
