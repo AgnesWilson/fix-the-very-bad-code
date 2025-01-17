@@ -3,13 +3,12 @@ G
 - [x] CSS till Sass
 - [x] Fixa light dark toggle mode 
 - [x] Enhetlig namngivning i CSS:en
-- [ ] Konvertera till TypeScript
+- [x] Konvertera till TypeScript
 - [x] Enhetlig kodkvalitet (ESLint)
 - [x] Mobilvyn
 - [x] Språk
-(- [ ] Rensa loggning)
-- [ ] Dokumentation
-- [ ] Tillgänglighet (bilder)
+- [x] Dokumentation
+- [x] Tillgänglighet (bilder)
 - [x] Refaktorera funktioner
 - [x] Eliminera onödig kod
 - [x] Rensa bort kod som inte ska sättas

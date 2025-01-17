@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 
 import globals from "globals";
 import pluginJs from "@eslint/js";
@@ -8,7 +9,6 @@ import tseslint from "typescript-eslint";
 export default [
   { languageOptions: { globals: globals.browser },
     rules: {
-      // eslint-disable-next-line max-len
       'no-unused-vars': ['error', { argsIgnorePattern: '^_' }], // Prevent unused variables while ignoring intentional `_` placeholders
       'no-console': 'warn', // Encourage removal of `console.log` in production code
       'eqeqeq': 'error', // Enforce strict equality checks (=== and !==)
@@ -50,11 +50,12 @@ export default [
       'brace-style': ['error', '1tbs'], // Enforce one true brace style for blocks
       'func-call-spacing': ['error', 'never'], // Disallow spaces between function names and their invocations
       'keyword-spacing': ['error', { before: true, after: true }] // Enforce consistent spacing before/after keywords
-    },
+    }
   },
-  pluginJs.configs.recommended,
+  pluginJs.configs.recommended
 ];
-  {files: ["**/*.{js,mjs,cjs,ts}"]},
+[
+  {files: ['**/*.{js,mjs,cjs,ts}']},
   {languageOptions: { globals: globals.browser }},
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
