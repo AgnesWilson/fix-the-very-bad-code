@@ -20,8 +20,8 @@ export function consoleLog(...sometingToLog: unknown[]): void {
 }
 
 // Konrtroll för om man befinner sig i prod-miljö
-//Om så är fallet skrivs "detta är developmentmiljö" ut i konsollen
-//Och en röd kant runt sidan ritas ut 
+// Om så är fallet skrivs "detta är developmentmiljö" ut i konsollen
+// Och en röd kant runt sidan ritas ut 
 if (import.meta.env.DEV) {
   document.body.style.border = '3px solid red';
   consoleLog('detta är developmentmiljön!');
