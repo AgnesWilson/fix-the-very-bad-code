@@ -1,11 +1,8 @@
+
 import '/scss/style.scss';
-<<<<<<< Updated upstream:main.mjs
-import { createHtml } from './src/js/createHtml.mjs';
-import toggleLightMode from './src/js/toggleDarkmode.mjs';
-=======
 import { createHtml } from './src/js/createHtml.ts';
 import toggleLightMode from './src/js/toggleDarkmode.ts';
->>>>>>> Stashed changes:main.ts
+
 
 function runPage (){
   toggleLightMode();
@@ -16,10 +13,9 @@ runPage();
 
 // Funktion för Console.log
 // OM Vi befinner oss i dev miljö skrivs skonsollmeddelandet ut
-export function consoleLog(...sometingToLOg) {
+export function consoleLog(...sometingToLog: unknown[]): void {
   if (import.meta.env.DEV) {
-    // eslint-disable-next-line no-console
-    console.log(...sometingToLOg);
+    console.log(...sometingToLog);
   }
 }
 
