@@ -5,3 +5,4 @@ To Do Fredag:
 - Pull upp break-out of-console-log to dev
 - Omvandla JS till TS 
 - gör readme.md
+
