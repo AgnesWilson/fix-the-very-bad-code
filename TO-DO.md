@@ -7,8 +7,7 @@ G
 - [x] Enhetlig kodkvalitet (ESLint)
 - [x] Mobilvyn
 - [x] Språk
-(- [ ] Rensa loggning)
-- [ ] Dokumentation
+- [x] Dokumentation
 - [x] Tillgänglighet (bilder)
 - [x] Refaktorera funktioner
 - [x] Eliminera onödig kod
