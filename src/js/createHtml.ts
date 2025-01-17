@@ -2,7 +2,7 @@ import { getPodcasts } from './api.ts';
 
 const podCastContainer = document.querySelector('#podList') as HTMLElement;
 
-interface Podcast {
+interface IPodcast {
   name: string;
   description: string;
   programurl: string;
@@ -12,7 +12,7 @@ interface Podcast {
 export async function createHtml() {
   const podCasts = await getPodcasts();
 
-  podCasts.programs.forEach((podcast :Podcast): void => {
+  podCasts.programs.forEach((podcast :IPodcast): void => {
     const innerArticle = createInnerArticle();
 
     createImg(podcast, innerArticle);
@@ -40,7 +40,7 @@ function createTextDiv(innerArticle: HTMLElement): HTMLElement {
 }
 
 
-function createImg(podcast: Podcast, innerArticle: HTMLElement): void {
+function createImg(podcast: IPodcast, innerArticle: HTMLElement): void {
   const imgPlacement = document.createElement('img');
   imgPlacement.setAttribute('src', podcast.socialimage);
   imgPlacement.setAttribute('width', '100');
@@ -49,7 +49,7 @@ function createImg(podcast: Podcast, innerArticle: HTMLElement): void {
   innerArticle.appendChild(imgPlacement);
 }
 
-function createHeader(podcast: Podcast, textDiv: HTMLElement): void {
+function createHeader(podcast: IPodcast, textDiv: HTMLElement): void {
   const headerPlacement = document.createElement('h2');
   const programName = document.createTextNode(podcast.name);
   headerPlacement.appendChild(programName);
@@ -57,14 +57,14 @@ function createHeader(podcast: Podcast, textDiv: HTMLElement): void {
 }
 
 
-function createDescription(podcast: Podcast, textDiv: HTMLElement): void {
+function createDescription(podcast: IPodcast, textDiv: HTMLElement): void {
   const descPlacement = document.createElement('p');
   const desc = document.createTextNode(podcast.description);
   descPlacement.appendChild(desc);
   textDiv.appendChild(descPlacement);
 }
 
-function createLink(podcast: Podcast, textDiv: HTMLElement): void {
+function createLink(podcast: IPodcast, textDiv: HTMLElement): void {
   const linkPlacement = document.createElement('a');
   const linkText = document.createTextNode('Lyssna här');
   linkPlacement.setAttribute('href', podcast.programurl);
