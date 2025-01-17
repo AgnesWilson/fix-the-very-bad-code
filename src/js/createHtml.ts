@@ -1,4 +1,5 @@
-import { getPodcasts } from './api.ts';
+import { getPodcasts } from './getPodcasts.ts';
+import log from './helpers.ts';
 
 const podCastContainer = document.querySelector('#podList') as HTMLElement;
 
@@ -11,6 +12,7 @@ interface IPodcast {
 
 export async function createHtml() {
   const podCasts = await getPodcasts();
+  log(podCasts);
 
   podCasts.programs.forEach((podcast :IPodcast): void => {
     const innerArticle = createInnerArticle();
