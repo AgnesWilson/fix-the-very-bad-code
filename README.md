@@ -7,3 +7,4 @@ To Do Fredag:
 - Omvandla JS till TS 
 - gör readme.md
 
+
