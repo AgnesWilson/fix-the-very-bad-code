@@ -1,9 +1,9 @@
-import { consoleLog } from '../../main.mjs';
-const toggleLightModeButton = document.querySelector('.toggle-btn');
+import { consoleLog } from '../../main.ts';
+const toggleLightModeButton = document.querySelector('.toggle-btn')as HTMLButtonElement ;
 
 toggleLightModeButton.addEventListener('click', toggleLightMode);
 
-function toggleLightMode() {
+function toggleLightMode(): void {
   document.body.classList.toggle('darkmode');
 
   if (document.body.classList.contains('darkmode')){
