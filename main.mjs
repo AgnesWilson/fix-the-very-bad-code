@@ -1,6 +1,11 @@
 import '/scss/style.scss';
+<<<<<<< Updated upstream:main.mjs
 import { createHtml } from './src/js/createHtml.mjs';
 import toggleLightMode from './src/js/toggleDarkmode.mjs';
+=======
+import { createHtml } from './src/js/createHtml.ts';
+import toggleLightMode from './src/js/toggleDarkmode.ts';
+>>>>>>> Stashed changes:main.ts
 
 function runPage (){
   toggleLightMode();
