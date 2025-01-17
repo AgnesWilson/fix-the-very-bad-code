@@ -11,10 +11,10 @@ runPage();
 
 // Funktion för Console.log
 // OM Vi befinner oss i dev miljö skrivs skonsollmeddelandet ut
-export function consoleLog(sometingToLOg) {
+export function consoleLog(...sometingToLOg) {
   if (import.meta.env.DEV) {
     // eslint-disable-next-line no-console
-    console.log(sometingToLOg);
+    console.log(...sometingToLOg);
   }
 }
 
