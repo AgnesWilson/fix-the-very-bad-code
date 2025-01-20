@@ -7,7 +7,7 @@ import { mockData } from './mockData.ts';
     // Annars, gör API-anropet i produktionsläge
         // Om det blir något fel med att hämta datan, skriv ett felmeddelande i consolen 
 
-export async function getPodcasts() {
+async function getPodcasts() {
 
     if (import.meta.env.DEV) {
         log('Laddar fake data utvecklingsmiljö.');

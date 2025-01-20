@@ -1,4 +1,4 @@
-import { getPodcasts } from './getPodcasts.ts';
+import getPodcasts from './api.ts';
 import log from './helpers.ts';
 
 const podCastContainer = document.querySelector('#podList') as HTMLElement;
