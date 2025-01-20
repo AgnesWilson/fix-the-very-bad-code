@@ -13,7 +13,7 @@ async function getPodcasts() {
 
     if (import.meta.env.DEV) {
         log('Laddar fake data utvecklingsmiljö.');
-        log('API URL:', import.meta.env.VITE_APP_API_URL);
+        console.warn('Datan hämtas nu från ett lokalt Object (mockData.ts) pga. att du är i utvecklingsmiljö. Kör pnpm run build + preview för att testa mot det riktiga API:et')
         return mockData;
     }
 
