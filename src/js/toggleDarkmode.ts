@@ -5,9 +5,9 @@ const toggleLightModeButton = document.querySelector('.toggle-btn')as HTMLButton
 toggleLightModeButton.addEventListener('click', toggleLightMode);
 
 function toggleLightMode(): void {
-  document.body.classList.toggle('darkmode');
+  document.body.classList.toggle('lightmode');
 
-  if (document.body.classList.contains('darkmode')){
+  if (document.body.classList.contains('lightmode')){
     toggleLightModeButton.innerHTML='Välj mörkt läge';
     log('Ljust läge');
   } else {
