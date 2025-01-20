@@ -1,14 +1,14 @@
 @import "base";
 
 @media screen and (min-width: 1000px) {
-    .section__podlist-pods{
+    .pod-list{
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
   }
 
   @media screen and (min-width: 1440px) {
-    .section__podlist-pods{
+    .pod-list{
       grid-template-columns: 1fr 1fr 1fr;
     }
 }
