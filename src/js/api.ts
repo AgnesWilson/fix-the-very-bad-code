@@ -7,7 +7,7 @@ const errorMsg = document.querySelector('#errorMsg') as HTMLElement;
 // Om vi är i utvecklingsmiljö, använd fake data från .env.dev
 // Returnera fake data
 // Annars, gör API-anropet i produktionsläge
-// Om det blir något fel med att hämta datan, skriv ett felmeddelande i consolen 
+// Om det blir något fel med att hämta datan, skriv ett felmeddelande i consolen
 
 async function getPodcasts() {
 
