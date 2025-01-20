@@ -13,10 +13,11 @@ async function getPodcasts() {
 
     if (import.meta.env.DEV) {
         log('Laddar fake data utvecklingsmiljö.');
+        log('API URL:', import.meta.env.VITE_APP_API_URL);
         return mockData;
     }
 
-   return await fetch (import.meta.env.VITE_APP_API_URL)
+   return await fetch(import.meta.env.VITE_APP_API_URL)
     .then((data) => data.json())
      .then((json) => json)
      .catch((error) => {
