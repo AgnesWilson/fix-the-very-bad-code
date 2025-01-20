@@ -1,11 +1,14 @@
+@import "variables";
+
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: $main-font;
   line-height: 1.5;
   font-weight: 400;
 
+  // Mörkt läge färgsättning
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: $dark-mode-text;
+  background-color: $dark-mode-background;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,57 +17,61 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-.article {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 2rem;
-}
-
-.text-div{
-  display: inline-flex;
-  flex-direction: column;
-  margin-top: 0;
-  margin-left: 1rem;
-}
-
-img {
-  margin-top: .5rem;
-}
-
+// Rubrik
 h1 {
   font-size: 40px;
   text-align: center;
 }
 
-h2 {
-  font-size: 1.25rem;
-  margin: 0;
-}
+// Poddinfo - printas dynamiskt från .ts
+.article {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
 
-p {
-  font-size: 1rem;
-  margin: 0;
-}
-
-a {
-  color:rgba(255, 255, 255, 0.87);
-  cursor: pointer;
-}
-
-a:active, a:hover {
-  color:rgb(85, 85, 218);
-}
-
-.darkmode {
-  background-color: antiquewhite;
-  color: #242424;
-
-  a {
-    color: #242424;
+  .text-div{
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+  
+  img {
+    margin-top: .5rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin: 0;
   }
 }
 
+// Styling länk-text i mörkt läge
+a {
+  color: $dark-mode-text;
+  cursor: pointer;
 
-a:active, .darkmode a:hover{
-  color:rgb(85, 85, 218);
+  &:active, &:hover {
+    color: $highlight-colour;
+  }
+}
+
+// Ljust läge styling
+.lightmode {
+  background-color: $light-mode-background;
+  color: $dark-mode-background;
+
+  a {
+    color: $dark-mode-background;
+
+    // Styling länk-text i ljust läge
+    &:active, &:hover {
+      color: $highlight-colour;
+    }
+  }
 }
