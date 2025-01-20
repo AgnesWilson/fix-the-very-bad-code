@@ -56,7 +56,5 @@ Here are some screenshots of the page in mobile view, in both dark and light mod
 
 # Links
 
-**Reports** UPPDATERA DESSA
-- [Lighthouse-report](assets/validation-results/lighthouse-analysis.png)
-- [HTML validation](assets/validation-results/validation-hmtl.png)
-- [CSS validation](assets/validation-results/validatio-css.png)
+**Reports**
+- [Lighthouse-report](assets/lighthouse.png)

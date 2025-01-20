@@ -1,4 +1,4 @@
-import log from "./helpers";
+import log from './helpers';
 
 const toggleLightModeButton = document.querySelector('.toggle-btn')as HTMLButtonElement ;
 

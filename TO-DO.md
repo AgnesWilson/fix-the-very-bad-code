@@ -20,7 +20,7 @@ VG
 - [ ] Utnyttja features i Sass i CSS:en
 - [ ] Rensa bort paket som inte används
 - [x] Hantera fel i API-anropet
-- [ ] Gör en Lighthouse-analys
+- [x] Gör en Lighthouse-analys
 - [x] Läs av utvecklingsmiljön
     - [ ] Feature flag för att slå på/av möjlighet att testa mot API:et i utvecklingsläge 
 - [ ] Enhetlig syntax i CSS:en
