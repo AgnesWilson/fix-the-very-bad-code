@@ -17,11 +17,15 @@ VG
 - [x] Rätt sak på rätt plats
 - [x] Hantera loggning på ett effektivt sätt
 - [ ] Gör en tillgänglighetsgranskning av sidan
-- [ ] Utnyttja features i Sass i CSS:en
+- [x] Utnyttja features i Sass i CSS:en
 - [ ] Rensa bort paket som inte används
 - [x] Hantera fel i API-anropet
 - [x] Gör en Lighthouse-analys
 - [x] Läs av utvecklingsmiljön
     - [ ] Feature flag för att slå på/av möjlighet att testa mot API:et i utvecklingsläge 
-- [ ] Enhetlig syntax i CSS:en
+- [x] Enhetlig syntax i CSS:en
 - [x] Publicera sidan på GitHub pages 
+
+TO DO IMORGON: 
+- [ ] Få StyleLint att visa fel även i koden (likt eslint )
+- [ ] Feature flag för att slå på/av möjlighet att testa mot API:et i utvecklingsläge 
