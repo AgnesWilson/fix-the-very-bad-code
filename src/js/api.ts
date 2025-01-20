@@ -1,6 +1,8 @@
 import log from './helpers.ts';
 import { mockData } from './mockData.ts';
 
+const errorMsg = document.querySelector('#errorMsg') as HTMLElement;
+
 //funktion för att hämta podcasts 
     // Om vi är i utvecklingsmiljö, använd fake data från .env.dev
         // Returnera fake data
@@ -19,6 +21,7 @@ async function getPodcasts() {
      .then((json) => json)
      .catch((error) => {
         console.error('Något gick fel med att hämta API-datan:', error);
+        errorMsg.innerHTML = 'Något gick fel med hämtningen av poddarna.'; 
       return null;
     });
  }
