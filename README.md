@@ -48,10 +48,12 @@ To run the project locally, follow these steps:
 ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) 
 
 # Screenshots
-Here are some screenshots of the page in mobile view, in both dark and light mode, and also in development mode:
+Here are some screenshots of the page in mobile view, in both dark and light mode, small screen, and wide screen. The last image is the page in development mode:
 
 ![Light-mode](assets/light-mode.png)
 ![Dark-mode](assets/dark-mode.png)
+![Small screen](assets/small-screen.png)
+![Wide screen](assets/wide-screen.png)
 ![Dev-mode](assets/dev-mode.png)
 
 # Links
