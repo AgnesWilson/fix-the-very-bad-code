@@ -27,5 +27,5 @@ VG
 - [x] Publicera sidan på GitHub pages 
 
 TO DO IMORGON: 
-- [ ] Få StyleLint att visa fel även i koden (likt eslint )
+- [x] Få StyleLint att visa fel även i koden (likt eslint )
 - [ ] Feature flag för att slå på/av möjlighet att testa mot API:et i utvecklingsläge 
