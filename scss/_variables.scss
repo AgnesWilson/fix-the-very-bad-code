@@ -1,9 +1,11 @@
 $main-font: "Source Sans Pro", sans-serif;
 
 // Light-mode
-$light-mode-background: rgb(250, 235, 215);
+$light-mode-background: #faebd7;
 
 // Dark-mode
-$dark-mode-text: rgb(255, 255, 255, 0.87);
-$dark-mode-background: rgb(36, 36, 36);
-$highlight-colour: rgb(85, 85, 218);
+$dark-mode-text: #ffffffde;
+$dark-mode-background: #242424;
+
+$highlight-colour: #5555da;
+

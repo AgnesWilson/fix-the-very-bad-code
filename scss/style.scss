@@ -1,13 +1,13 @@
 @import "base";
 
-@media screen and (min-width: 1000px) {
+@media screen and (width >= 1000px) {
     .pod-list{
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (width >= 1440px) {
     .pod-list{
       grid-template-columns: 1fr 1fr 1fr;
     }
