@@ -26,6 +26,3 @@ VG
 - [x] Enhetlig syntax i CSS:en
 - [x] Publicera sidan på GitHub pages 
 
-TO DO IMORGON: 
-- [x] Få StyleLint att visa fel även i koden (likt eslint )
-- [ ] Feature flag för att slå på/av möjlighet att testa mot API:et i utvecklingsläge 
