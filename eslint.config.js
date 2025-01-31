@@ -6,7 +6,7 @@ import tseslint from 'typescript-eslint';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-  {files: ['**/*.{js,mjs,cjs,ts}']},
+  { files: ['**/*.{js,mjs,cjs,ts}'] },
   {
     languageOptions: { globals: globals.browser },
     rules: {
@@ -51,8 +51,8 @@ export default [
       'brace-style': ['error', '1tbs'], // Enforce one true brace style for blocks
       'func-call-spacing': ['error', 'never'], // Disallow spaces between function names and their invocations
       'keyword-spacing': ['error', { before: true, after: true }] // Enforce consistent spacing before/after keywords
-    },
+    }
   },
   pluginJs.configs.recommended,
-  ...tseslint.configs.recommended,
+  ...tseslint.configs.recommended
 ];
