@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/fed24d-arbetsmetodik-inl-1-AgnesWilson/'
+  base: '/AgnesWilson/fix-the-very-bad-code'
 });
